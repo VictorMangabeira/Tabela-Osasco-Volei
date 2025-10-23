@@ -4,22 +4,21 @@
 {
     margin: 0;
     padding: 0;
-    
+    text-align: center;
 }
 
 body
 {
     font-family: "Space Grotesk", sans-serif;
-    background-color: #d66407de;
-    color: #000000;
+    background-color: #000000;
+    color: #b43d3d;
     line-height: 1.6;
-    
 }
 
 ::selection
 {
-    background-color: #d80404;
-    color: #f80000;
+    background-color: #f0d3c6;
+    color: #ce3305;
     
 }
 
@@ -28,8 +27,8 @@ h1
     margin-bottom: 10px;
     line-height: 1.25;
     font-size: 2.4rem;
-    color: #680202;
-    text-shadow: 0 0 10px #a30404;
+    color: #c4c4c4;
+    text-shadow: 0 0 10px #eb0000;
     
     
 }
@@ -39,18 +38,18 @@ h2
     margin-bottom: 10px;
     line-height: 1.25;
     font-size: 1.8rem;
-    color: #fd4b05;
+    color: #f30101d3;
 }
 
 p
 {
     margin-bottom: 14px;
-    color: #3b0a01;
+    color: #f83c3c;
 }
 
 a
 {
-    color: #000000;
+    color: #fc5858;
     text-decoration: none;
     transition: color 0.3s;
     
@@ -58,21 +57,21 @@ a
 
 a:hover
 {
-    color: #680202;
+    color: #f1adad;
 }
 
 header
 {
-    background-color: #a30404;
+    background-color: #3d1717;
     padding: 40px 20px;
     text-align: center;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 25px 20px rgb(240, 3, 3);
 }
 
 nav
 {
-    background-color: #a30404;
-    border-top: 1px solid #3b0a01;
-    border-bottom: 1px solid #680202;
+    background-color: #070707;
+    border-top: 1px solid #ff0303;
+    border-bottom: 1px solid #ff0303;
 
 }

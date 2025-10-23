@@ -3,21 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Volei</title>
+
 </head>
 <body>
-    <herdae>
+    <header>
         <h1>Tabela de Jogos Osasco Voleibol</h1>
-        <p>Tabela de jogos do Osasco na SuperLiga Feminna</p>
-    </herdae>
+        <p>Tabela de jogos do Osasco na SuperLiga Feminina temporada 2025/2026</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#titulos">Titulos da SuperLiga</a></li>
+            <li><a href="#elenco">Elenco atual</a></li>
+            <li><a href="#tabela">Tabela de jogos</a></li>
+            <li><a href="#links">Links Oficiais</a></li>
+            <li><a href="#informações">Mais informações</a></li>
+        </ul>
+    </nav>
 
     <main>
-        <section>
+        <section id="sobre">
             <h2>Sobre o Osasco Voleibool</h2>
             <img src="timeosasco.avif" alt="jogadoras do Osasco se abraçando apos um ponto" windh="300">
             <p> O <strong>Osasco São Cristóvão Saúde</strong> (ou Osasco Voleibol Clube) é um dos clubes de vôlei feminino mais tradicionais, vitoriosos e populares do Brasil. <br/> Sediado na cidade de Osasco, São Paulo. O time é o atual campeão da Superliga Feminina. <br/> Tendo conquistado o título da temporada 2024/2025.</p>
         </section>
-        <section>
+        <section id="titulos">
             <h2>Titulos da SuperLiga</h2>
             <ol>
                 <li>Temporada: 2002/03</li>
@@ -28,7 +41,7 @@
                 <li>Temporada: 2024/25</li>
             </ol>
         </section>
-        <section>
+        <section id="elenco">
             <h2>Elenco atual</h2>
             <p>Este é o elenco principal montado para a defesa do título na temporada 2025/2026:</p>
             <ul>
@@ -40,15 +53,16 @@
                 <li><strong> Técnico:</strong> Luizomar de Moura</li>
             </ul>
         </section>
-        <section>
+        <section id="tabela">
             <table border="1">
-                <caption>Tabela de Jogos</caption>
+                <caption><strong>Tabela de Jogos</strong></caption>
                 <thead>
                     <tr>
                         <th>Dia</th>
                         <th>Jogo</th>
                         <th>Local</th>
                         <th>Horario</th>
+                        <th>transmição</th>
                     </tr>
                 </thead>
                 <thead>
@@ -58,42 +72,53 @@
                             <td>Tijuca Tênis Clube x Osasco</td>
                             <td>Ginásio do Tijuca Tênis Clube (Rio de Janeiro-RJ)</td>
                             <td>18h30</td>
+                            <td>VBTV</td>
                         </tr>
                         <tr>
                             <td>25/10 (Sábado)</td>
                             <td>Osasco x Sorocaba</td>
                             <td>Ginásio José Liberati (Osasco-SP)</td>
                             <td>18h30</td>
+                            <td>SporTV 2/VBTV</td>
+
                         </tr>
                         <tr>
                             <td>30/10 (Quinta-feira)</td>
                             <td>Brasília Vôlei x Osasco</td>
                             <td>Ginásio do SESI Taguatinga Norte (Brasília-DF)</td>
                             <td>21h00</td>
+                            <td>SporTV 2/VBTV</td>
+
                         </tr>
                         <tr>
                             <td>07/11 (Sexta-feira)</td>
                             <td>Osasco x Mackenzie</td>
                             <td>Ginásio José Liberati (Osasco-SP)</td>
                             <td>19:00</td>
+                            <td>VBTV</td>
+
                         </tr>
                         <tr>
                             <td>17/11 (Segunda-feira)</td>
                             <td>Osasco x Barueri</td>
                             <td>Ginásio José Liberati (Osasco-SP)</td>
                             <td>19:00</td>
+                            <td>SporTV 2/VBTV</td>
+
                         </tr>
                         <tr>
                             <td>24/11 (Segunda-feira)</td>
                             <td>Osasco x Sesc Flamengo</td>
                             <td>Ginásio José Liberati (Osasco-SP)</td>
                             <td>21h00</td>
+                            <td>SporTV 2/VBTV</td>
+
                         </tr>
                     </tbody>
                 </thead>
             </table>
         </section>
-        <section>
+        <section id="links">
             <h2>Links Oficiais</h2>
             <ul>
                 <li><a href="https://superliga.cbv.com.br/">SuperLiga Feminina</a></li>
@@ -103,9 +128,42 @@
                 <li><a href="https://www.tiktok.com/@osascovoleibolclube">TikTok Oficial do Osasco Voleibol</a></li>
             </ul>
         </section>
+        <section id="informações">
+            <h2>Mais informações</h2>
+            <p>Preencha os formularios para saber mais informações: </p>
+
+            <form action="#">
+                <label for="nome"> Nome: </label>
+                <br/>
+                <input type="text" name="nome" id="nome">
+                <br><br/>
+
+                <label for="email"> E-mail: </label>
+                <br/>
+                <input type="email" name="email" id="email" required>
+                <br><br/>
+
+                <label for="assunto"> Assunto: </label>
+                <br/>
+ 
+                    <textarea             
+                        name="mensagem"
+                        id="mensagem"
+                        rows="4"
+                        cols="30"
+                        required
+                    ></textarea>
+                    <br/><br/>
+                
+
+                <button type="submit"> Enviar Mansagem: </button>
+
+            </form>
+        </section>
 
         
     </main>
+    <br/>
     <footer>Página desenvolvida por Victor Mangabeira</footer>
     
 </body>

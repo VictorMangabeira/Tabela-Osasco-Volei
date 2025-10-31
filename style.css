@@ -1,60 +1,17 @@
+
+/* Inportação da fonte */
 @import url('https://fonts.googleapis.com/css2?family=Walter+Turncoat&display=swap');
+
+/* configuração geral da página */
 *
 {
     margin: 0;
     padding: 0;
 }
 
-body
-{
-    font-family:  "Walter Turncoat", cursive;
-    background-color: #9257db;
-    color: #2f4858;
-    line-height: 1.6;
-}
+/* Topo da tabela */
 
-::selection
-{
-    background-color: #5ab7d4;
-    color: #760000;
-    
-}
-
-h1
-{
-    margin-bottom: 10px;
-    line-height: 1.25;
-    font-size: 2.9rem;
-    color: #fff6f2;
-    text-shadow: 0 0 10px #459abe;
-h2
-{
-    margin-bottom: 10px;
-    line-height: 1.25;
-    font-size: 1.8rem;
-    color: #000061;
-    text-shadow: 0 0 3.5px #bba1d4;
-}
-
-p
-{
-    margin-bottom: 14px;
-    color: #00bdf2;
-}
-
-a
-{
-    color: #325082;
-    text-decoration: none;
-    transition: color 0.3s;
-    
-}
-
-a:hover
-{
-    color:#ff0000 ;
-}
-
+/* Corpo do topo */
 header
 {
     background-color: #490a9b;
@@ -63,11 +20,24 @@ header
     box-shadow: 0px 5px 10px rgb(89, 7, 197);
 }
 
+/* Titulo principal - topo*/
+h1
+{
+    margin-bottom: 10px;
+    line-height: 1.25;
+    font-size: 2.9rem;
+    color: #fff6f2;
+    /* Sombra do texto */
+    text-shadow: 0 0 10px #459abe;
+}
+
+/* Textos do topo da página */
 header p
 {
      color:#f03d4c;
 }
 
+/* Navegação da página */
 nav
 {
     background-color: #a15ff1;
@@ -75,27 +45,110 @@ nav
     border-bottom: 1px solid ;
 
 }
+
+/* Configuração de dentro da navegação */
  nav ul
- {
+{
     display: flex;
     justify-content: space-between;
     list-style: none;
     padding: 20px;
- }
+    font-size: 1.1rem;
+}
 
- nav a
- {
-    color: ;
+/* Configuações dos links da navegação */
+nav a
+{
+    color: #150073;
     padding: 6px 14px;
-    border-radius: 50px;
- }
+    border-radius: 40px;
+}
 
- nav a:hover
- {
-    background-color:;
-    color: ;
- }
+/* Configuração ao passar o mouse */
+nav a:hover
+{
+    background-color: #ce88ff;
+    color: #d40000;
+}
 
+
+/* Corpo da pagina */
+body
+{
+    font-family:  "Walter Turncoat", cursive;
+    background-color: #9257db;
+    color: #2f4858;
+    line-height: 1.6;
+}
+
+/* Seleção de texto */
+::selection
+{
+    background-color: #fcb1ff;
+    color: #150073;
+    
+}
+
+/* Segundo titulo */
+h2
+{
+    margin-bottom: 10px;
+    line-height: 1.25;
+    font-size: 1.8rem;
+    color: #bba1d4;
+    text-shadow: 0 0 5px #a15ff1;
+}
+
+/* Configuração da imagem */
+img
+{
+    max-width: 100%;
+    height:auto ;
+    border-radius: 10px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+    border: #490a9b;
+}
+
+/* Configuração do texto section/seção - Sobre - */
+.texto-sobre
+{
+    color: #fde9ff;
+    font-size: 1.17rem;
+    text-align: center;
+}
+
+/* Textos/letras gerais */
+p
+{
+    margin-bottom: 14px;
+    color: #fde9ff;
+}
+
+/* Configuração dos links, referencias */
+a
+{
+    color: #325082;
+    text-decoration: none;
+    transition: color 0.3s; 
+}
+
+/* Configurações das listas */
+li, a
+{
+    color: #ffceff;
+
+}
+
+/* Configuração ao passar o mouse nos links da página */
+a:hover
+{
+    color:#ff0000 ;
+}
+
+/* Corpo da página */
+
+/* Configuração principal */
  main
  {
    max-width: 950px;
@@ -104,6 +157,7 @@ nav
 
  }
 
+ /* Configurações das seções/sections */
  main section
  {
     background-color: #7537c5;
@@ -114,17 +168,44 @@ nav
     margin-bottom: 20px;
  }
 
- img
+ /* Configuração da tabela */
+ table
  {
-    max-width: ;
-    height: ;
-    border-radius: ;
-    border-radius: ;
-    margin-bottom: ;
+    width: 100%;
+    background-color: #ffceff;
+    color: ;
+    border-collapse: collapse;
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+ }
+
+ /* Titulo da tabela */
+ caption
+ {
+    font-size: 3rem;
+    color: ;
+    margin-bottom: 10px;
+    font-weight: bold;
+ }
+
+ /* Configuração da cabeça da tabela/legendas*/
+ thead
+ {
+    background: ;
+ }
+
+ /* Configuração das legendas da tabela */
+ th
+ {
+    background-color: ;
+    font-size: ;
+    
  }
 
  form
  {
     display: grid;
     gap: 12px;
+    background-color: #ffceff;
  }

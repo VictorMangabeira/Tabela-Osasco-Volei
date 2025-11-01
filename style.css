@@ -34,7 +34,7 @@ h1
 /* Textos do topo da página */
 header p
 {
-     color:#f03d4c;
+     color:#ffceff;
 }
 
 /* Navegação da página */
@@ -53,7 +53,8 @@ nav
     justify-content: space-between;
     list-style: none;
     padding: 20px;
-    font-size: 1.1rem;
+    font-size: 20px;
+    font-weight:bold;
 }
 
 /* Configuações dos links da navegação */
@@ -95,8 +96,9 @@ h2
     margin-bottom: 10px;
     line-height: 1.25;
     font-size: 1.8rem;
-    color: #bba1d4;
-    text-shadow: 0 0 5px #a15ff1;
+    color: #000066;
+    text-shadow: 0 0 1px #004fd1;
+    text-align: center;
 }
 
 /* Configuração da imagem */
@@ -123,6 +125,7 @@ p
 {
     margin-bottom: 14px;
     color: #fde9ff;
+    text-align: center;
 }
 
 /* Configuração dos links, referencias */
@@ -133,12 +136,14 @@ a
     transition: color 0.3s; 
 }
 
-/* Configurações das listas */
+/* Configurações das listas e links */
 li, a
 {
     color: #ffceff;
-
+    list-style-type: none;
+    text-align: center;
 }
+
 
 /* Configuração ao passar o mouse nos links da página */
 a:hover
@@ -154,7 +159,6 @@ a:hover
    max-width: 950px;
    margin: 30px auto;
    padding: 0 20px;
-
  }
 
  /* Configurações das seções/sections */
@@ -165,7 +169,7 @@ a:hover
     border-radius: 10px;
     box-shadow: 0, 0, 20px, (rgb(109, 3, 231));
     padding: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 60px;
  }
 
  /* Configuração da tabela */
@@ -173,10 +177,9 @@ a:hover
  {
     width: 100%;
     background-color: #ffceff;
-    color: ;
     border-collapse: collapse;
     border: none;
-    border-radius: 20px;
+    border-radius: 10px;
     overflow: hidden;
  }
 
@@ -184,28 +187,116 @@ a:hover
  caption
  {
     font-size: 3rem;
-    color: ;
+    color: #c96fcd;
     margin-bottom: 10px;
     font-weight: bold;
+    text-shadow: 0 0 10px #9257db;
  }
 
  /* Configuração da cabeça da tabela/legendas*/
  thead
- {
-    background: ;
- }
+{
+    background: linear-gradient(90deg, #490a9b 20%,  #000066 80%);
+}
 
- /* Configuração das legendas da tabela */
+/* Configuração das legendas da tabela */
  th
- {
-    background-color: ;
-    font-size: ;
-    
- }
+{
+    font-size: 1.1rem;
+    padding: 7px;
+    border: none;
+    text-align: center;
+    border-bottom: 2px solid #400093;
+    color: #fff5ff;
+}
 
+/* Configuração das células da tabela */
+td
+{
+    padding: 10px;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid #6e456f;
+    color: #4089a9;
+    font-weight: 500;
+}
+
+/* Configuração especifica das bordas da tabela */
+th:first-child, td:first-child
+{
+    border-top-left-radius: 7px;
+}
+
+th:last-child, td:last-child
+{
+    border-top-right-radius: 7px;
+}
+
+/* Configuração do formulário */
  form
- {
+{
     display: grid;
-    gap: 12px;
+    gap: 6px;
     background-color: #ffceff;
- }
+    padding: 20px 50px;
+    border-radius: 15px;
+}
+
+/* Configuração do textos/label do formulario */
+label
+{
+    font-weight: bold;
+    color: #000066;
+    text-align: left;
+}
+
+/* Configuração dos campos do formulário */
+input, textarea
+{
+    width: auto;
+    padding: 7px 7px;
+    background: #ffffff;
+    border: 1px solid #400093;
+    border-radius: 5px;
+}
+
+/* Configuração do foco do formulario/ quando clicar para escrever */
+input:focus, textarea:focus
+{
+    outline: none;
+    border-color: #9257db;
+    box-shadow: 0 0 5px #9257db;
+}
+
+/* Configuração do botão do formulario */
+button
+{
+    justify-self: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 10px 10px;
+    border: 1px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(103, 5, 231, 0.651);
+    width:auto;
+    font-size: 1rem;
+    font-weight: 500;
+    background: linear-gradient(90deg,  #490a9b 0%,  #000066 80%);
+}
+
+/* Configuração especifica do botão do formulario */
+.botão
+{
+    color: #ffffff;
+}
+
+/* Configutação da parte de baixo da página */
+footer
+{
+    background-color: #000066;
+    color: #fff6f2;
+    text-align: center;
+    padding: 10px 20px;
+    text-shadow: 0 0 10px #b773ff;
+}
